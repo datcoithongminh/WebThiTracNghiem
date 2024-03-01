@@ -19,6 +19,7 @@ header {
   padding: 1rem 5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--red);
 }
 
@@ -38,6 +39,12 @@ body {
   align-items: center;
 
   min-height: 100vh;
+}
+
+img {
+  max-width: 50px;
+  max-width: auto;
+  /* border: solid 1px white; */
 }
 
 .wrapper {
@@ -99,7 +106,27 @@ body {
   transform: translateX(0px);
 }
 
-.loginSubmitButton {
+.login-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.register-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.loginToRegisterButton {
+  text-align: center;
+}
+.loginToRegisterButton {
+  text-align: center;
+}
+
+.submitButton {
   margin-top: 10px;
   border: solid 2px black;
   border-radius: 15px;
@@ -110,7 +137,7 @@ body {
 
 }
 
-.loginSubmitButton:hover {
+.submitButton:hover {
   margin-top: 10px;
   border: solid 2px black;
   border-radius: 15px;
