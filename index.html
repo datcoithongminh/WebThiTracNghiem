@@ -10,7 +10,9 @@
 
 <body>
   <header>
-    <a href="">Logo here</a>
+    <a href="">
+      <img class="logo-image" src="./assets/logo-ptit.png" alt="">
+    </a>
     <!-- <input type="text"> -->
     <button id="loginButton">Login</button>
   </header>
@@ -22,15 +24,39 @@
         <form action="#">
           <div class="input-box">
             <!-- <label>Email</label> -->
+            <input type="text" placeholder="Username" required>
+          </div>
+          <div class="input-box">
+            <!-- <label>Password</label> -->
+            <input type="password" placeholder="Password" required>
+          </div>
+          <button class="loginSubmitButton submitButton">Login</button>
+          <div class="login-register">
+            <a class="loginToRegisterButton"  href="#">Register</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Username" required>
+          </div>
+          <div class="input-box">
             <input type="email" placeholder="Email" required>
           </div>
           <div class="input-box">
             <!-- <label>Password</label> -->
             <input type="password" placeholder="Password" required>
           </div>
-          <button class="loginSubmitButton">Login</button>
-          <div class="login-register">
-            <a href="">Register</a>
+          <div class="input-box">
+            <!-- <label>Password</label> -->
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+          <button class="registerSubmitButton submitButton">Register</button>
+          <div class="register-login">
+            <a class="registerToLoginButton" href="#">Login</a>
           </div>
         </form>
       </div>
